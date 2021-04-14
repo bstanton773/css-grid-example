@@ -1,0 +1,66 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "adidas apple amazon beats";
+    margin-top: 10vh;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "beats amazon apple adidas";
+    margin-top: 10vh;
+}
+
+
+.adidas{
+    grid-area: adidas;
+}
+
+.apple{
+    grid-area: apple;
+}
+
+.amazon{
+    grid-area: amazon;
+}
+
+.beats{
+    grid-area: beats;
+}
+
+.dre{
+    grid-area: dre;
+}
+
+.bezos{
+    grid-area: bezos;
+}
+
+.cook{
+    grid-area: cook;
+}
+
+.threestripes{
+    grid-area: threestripes;
+}
+
+
+/* Group Selecting the 4 grid areas */
+.adidas, .apple, .amazon, .beats, .dre, .bezos, .cook, .threestripes{
+    justify-self: center;
+    align-self: center;
+    border: 1px solid #eee;
+    max-height: 50vh;
+    padding: 3em;
+}
+
+div img{
+    width: 100%;
+    height: auto;
+}
+
